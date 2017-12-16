@@ -1,0 +1,132 @@
+$background: orange;
+//$background: #ED9248;
+$pineapple: yellow;//#F0AF50;
+$pinapple-texture: orange; //#ED9248;
+$leaf: green;//#48AE65;
+$container-height: 45vw;
+$pineapple-square-width:18%;
+body {
+background: $background;
+  overflow: hidden;
+}
+.container{
+    height:$container-height;
+  width: 90vw;
+ margin: auto;
+  position: relative;
+}
+.pineapple-space{
+  background: red;
+  position: absolute;
+  height: 45vw;
+  width: 50vw;
+  top: 0;
+  left: 20vw;
+  
+}
+.leaf{
+  position: absolute;
+  border-radius: 50%;
+//  background: purple;
+ 
+  z-index: 1;
+}
+.l1{
+  @extend .leaf;
+   box-shadow: 0vw -3.5vw 0  $leaf;
+  height: 30%;
+  width: 30%;
+  left: 15%;
+  top: 30%;
+   //transform: rotate(30deg);
+ 
+}
+.pinapple{
+  background: $pineapple;
+  position: absolute;
+    left: 12.5vw;
+  top: 15vw;
+    height: 30vw;
+  width: 20vw;
+  border-radius: 40% ;
+    z-index: 2;
+  overflow: hidden;
+}
+.row{
+ // position: absolute;
+  position: relative;
+  height: 10%;
+  width: 120%;
+  left: -10%;
+ 
+  transform: rotate(-25deg);
+  margin-top: 8%;
+ 
+}
+
+.row1{
+  @extend .row;
+ margin-top: 20%;
+}
+.row2{
+  @extend .row;
+ // top: 30%;
+}
+.row3{
+  @extend .row;
+ 
+}
+.row4{
+  @extend .row;
+ // top: 14.25%;
+}
+.row5{
+  @extend .row;
+ // top: 14.25%;
+}
+.row6{
+  @extend .row;
+ // top: 14.25%;
+}
+.pinapple-square{
+   background: $pinapple-texture;
+  top: 0;
+  position: absolute;
+  width: 14%;
+  height: 100%;
+ // margin-right: 10%;
+}
+.pinapple-square1{
+  @extend .pinapple-square;
+  left: 0%;
+}
+.pinapple-square2{
+  @extend .pinapple-square;
+left:$pineapple-square-width;
+}
+.pinapple-square3{
+  @extend .pinapple-square;
+left:$pineapple-square-width*2;
+}
+.pinapple-square4{
+  @extend .pinapple-square;
+left:$pineapple-square-width*3;
+}
+.pinapple-square5{
+  @extend .pinapple-square;
+left:$pineapple-square-width*4;
+}
+.pinapple-square6{
+  @extend .pinapple-square;
+left:$pineapple-square-width*5;
+}
+@media (min-aspect-ratio: 1/8) {
+  .portrait-spacer {
+    height: 25vw;
+  }
+}
+@media (min-aspect-ratio: 5/4) {
+  .portrait-spacer {
+    height: 0px;
+  }
+}

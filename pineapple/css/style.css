@@ -1,0 +1,102 @@
+body {
+  background: orange;
+  overflow: hidden;
+}
+
+.container {
+  height: 45vw;
+  width: 90vw;
+  margin: auto;
+  position: relative;
+}
+
+.pineapple-space {
+  background: red;
+  position: absolute;
+  height: 45vw;
+  width: 50vw;
+  top: 0;
+  left: 20vw;
+}
+
+.leaf, .l1 {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.l1 {
+  box-shadow: 0vw -3.5vw 0 green;
+  height: 30%;
+  width: 30%;
+  left: 15%;
+  top: 30%;
+}
+
+.pinapple {
+  background: yellow;
+  position: absolute;
+  left: 12.5vw;
+  top: 15vw;
+  height: 30vw;
+  width: 20vw;
+  border-radius: 40%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.row, .row1, .row2, .row3, .row4, .row5, .row6 {
+  position: relative;
+  height: 10%;
+  width: 120%;
+  left: -10%;
+  transform: rotate(-25deg);
+  margin-top: 8%;
+}
+
+.row1 {
+  margin-top: 20%;
+}
+
+.pinapple-square, .pinapple-square1, .pinapple-square2, .pinapple-square3, .pinapple-square4, .pinapple-square5, .pinapple-square6 {
+  background: orange;
+  top: 0;
+  position: absolute;
+  width: 14%;
+  height: 100%;
+}
+
+.pinapple-square1 {
+  left: 0%;
+}
+
+.pinapple-square2 {
+  left: 18%;
+}
+
+.pinapple-square3 {
+  left: 36%;
+}
+
+.pinapple-square4 {
+  left: 54%;
+}
+
+.pinapple-square5 {
+  left: 72%;
+}
+
+.pinapple-square6 {
+  left: 90%;
+}
+
+@media (min-aspect-ratio: 1 / 8) {
+  .portrait-spacer {
+    height: 25vw;
+  }
+}
+@media (min-aspect-ratio: 5 / 4) {
+  .portrait-spacer {
+    height: 0px;
+  }
+}
